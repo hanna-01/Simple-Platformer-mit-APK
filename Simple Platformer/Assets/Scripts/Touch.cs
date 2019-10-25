@@ -4,7 +4,7 @@ using System.Collections;
 public class Touch : MonoBehaviour
 {
     private Controls player;
-
+    
 
     // Use this for initialization
     void Start()
@@ -22,6 +22,12 @@ public class Touch : MonoBehaviour
         player.moveright = true;
         player.moveleft = false;
     }
+
+    public void Jump()
+    {
+        player.jump = true;
+    }
+
     public void ReleaseLeftArrow()
     {
         player.moveleft = false;
